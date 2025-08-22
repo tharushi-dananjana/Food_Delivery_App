@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Food Delivery</string>
+    <string name="textStyle">italic</string>
+</resources>
