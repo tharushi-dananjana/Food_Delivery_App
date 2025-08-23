@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.WelcomeActivity">
+    tools:context=".activity.LoginActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,9 +26,9 @@
                     <ImageView
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
-                        android:layout_height="436dp"
+                        android:layout_height="421dp"
                         android:scaleType="fitXY"
-                        app:srcCompat="@drawable/top_background1" />
+                        app:srcCompat="@drawable/top_background2" />
 
                     <TextView
                         android:id="@+id/textView"
@@ -36,7 +36,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="32dp"
                         android:layout_marginRight="32dp"
-                        android:text="Welcome\nBack"
+                        android:text="Create\nAccount"
                         android:textColor="#EA6D35"
                         android:textSize="40sp"
                         android:textStyle="bold" />
@@ -46,12 +46,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="32dp"
                         android:background="@drawable/edittext_background"
-                        android:drawableStart="@drawable/email"
+                        android:drawableStart="@drawable/name"
                         android:drawablePadding="16dp"
                         android:ems="10"
-                        android:hint="Email"
+                        android:hint="Name"
                         android:inputType="textPersonName"
                         android:padding="8dp"
                         android:textColorHint="#756C6C" />
@@ -66,24 +67,44 @@
                         android:drawableStart="@drawable/password"
                         android:drawablePadding="16dp"
                         android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textColorHint="#756C6C" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPasswordName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableStart="@drawable/password"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
                         android:hint="Password"
                         android:inputType="textPersonName"
                         android:padding="8dp"
                         android:textColorHint="#756C6C" />
 
-                    <TextView
-                        android:id="@+id/submitBtn"
-                        android:layout_width="326dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginTop="32dp"
+                    <ImageView
+                        android:id="@+id/lgBtn"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="32dp"
-                        android:background="@drawable/orange_button"
-                        android:padding="20sp"
-                        android:paddingStart="90sp"
-                        android:text="S  U  B  M  I  T"
-                        android:textSize="24sp" />
+                        app:srcCompat="@drawable/btn_arrow2" />
 
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:orientation="horizontal"/>
 
                 </LinearLayout>
             </ScrollView>

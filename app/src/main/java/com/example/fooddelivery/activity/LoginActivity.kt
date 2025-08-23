@@ -1,4 +1,4 @@
-package com.example.fooddelivery
+package com.example.fooddelivery.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,22 +7,22 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.fooddelivery.R
 import com.example.fooddelivery.activity.MainActivity
-import com.example.fooddelivery.activity.LoginActivity
 
-class IntroActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
-    private lateinit var startBtn: ConstraintLayout
+    private lateinit var lgBtn: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_intro)
+        setContentView(R.layout.activity_login)
 
-        startBtn = findViewById(R.id.startBtn)
+        lgBtn = findViewById(R.id.lgBtn)
 
-        startBtn.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+        lgBtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
