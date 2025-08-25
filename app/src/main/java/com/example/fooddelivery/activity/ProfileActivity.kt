@@ -2,6 +2,7 @@ package com.example.fooddelivery.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,10 +17,9 @@ class ProfileActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_profile)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        findViewById<View>(R.id.arrow).setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
@@ -35,6 +35,10 @@ class ProfileActivity : AppCompatActivity() {
                 }
                 R.id.nav_profile -> {
                     // Already in profile → do nothing
+                    true
+                }
+                R.id.nav_notification -> {
+                    startActivity(Intent(this, NotificationActivity::class.java))
                     true
                 }
                 R.id.nav_settings -> {

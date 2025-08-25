@@ -13,6 +13,7 @@
         android:icon="@drawable/btn4"
         android:title="Settings" />
     <item
-        android:id="@+id/nav_support"
-        android:icon="@drawable/btn2"        android:title="Support" />
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/btn2"
+        android:title="Notification" />
 </menu>
