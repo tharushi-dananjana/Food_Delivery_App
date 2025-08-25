@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Food Delivery</string>
     <string name="textStyle">italic</string>
-        <string name="welcome">Welcome to QuickBite</string>
-        <string name="get_started">Get Started</string>
-        <string name="login">Login</string>
-        <string name="signup">Sign Up</string>
-        <string name="search_hint">Search for food or restaurants...</string>
-        <string name="order_now">Order Now</string>
-        <string name="add_to_cart">Add to Cart</string>
+    <string name="welcome">Welcome to QuickBite</string>
+    <string name="get_started">Get Started</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="search_hint">Search for food or restaurants...</string>
+    <string name="order_now">Order Now</string>
+    <string name="add_to_cart">Add to Cart</string>
 
 
 </resources>
