@@ -71,29 +71,38 @@
                         android:layout_marginEnd="32dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cardView">
+                        app:layout_constraintTop_toBottomOf="@+id/pickupC">
 
                         <ImageView
                             android:id="@+id/imageView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="20dp"
+                            android:layout_height="18dp"
                             android:layout_marginStart="16dp"
-                            android:layout_marginTop="12dp"
-                            android:rotationY="193"
+                            android:layout_marginTop="15dp"
+                            android:rotationY="6"
                             app:srcCompat="@drawable/back" />
 
                         <TextView
                             android:id="@+id/textView7"
-                            android:layout_width="219dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="80dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="115dp"
                             android:paddingStart="16dp"
-                            android:text="Delivery"
-                            android:textSize="34sp" />
+                            android:text="Delivery "
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginTop="24dp"
+                            android:text="Choose your location" />
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView"
+                        android:id="@+id/pickupC"
                         android:layout_width="299dp"
                         android:layout_height="51dp"
                         android:layout_marginStart="32dp"
@@ -105,21 +114,32 @@
 
                         <ImageView
                             android:id="@+id/imageView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="20dp"
+                            android:layout_height="18dp"
                             android:layout_marginStart="16dp"
-                            android:layout_marginTop="12dp"
-                            android:rotationY="193"
+                            android:layout_marginTop="15dp"
+                            android:rotationY="2"
                             app:srcCompat="@drawable/back" />
 
                         <TextView
                             android:id="@+id/textView4"
-                            android:layout_width="219dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="80dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="115dp"
                             android:paddingStart="16dp"
-                            android:text="TextView"
-                            android:textSize="34sp" />
+                            android:text="Pickup "
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginTop="24dp"
+                            android:text="Find your nearest outlet" />
+
+
                     </androidx.cardview.widget.CardView>
 
                     <TextView

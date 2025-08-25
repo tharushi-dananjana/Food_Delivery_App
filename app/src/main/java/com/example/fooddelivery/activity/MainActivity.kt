@@ -2,6 +2,7 @@ package com.example.fooddelivery.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fooddelivery.R
@@ -14,6 +15,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        findViewById<View>(R.id.pizzaC).setOnClickListener{
+            val intent = Intent(this, PizzaActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<View>(R.id.burgurC).setOnClickListener{
+            val intent = Intent(this, BurgurActivity::class.java)
+            startActivity(intent)
+        }
+
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
