@@ -7,20 +7,15 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fooddelivery.R
 
-class PizzaActivity : AppCompatActivity() {
+class ResetPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_pizza)
+        setContentView(R.layout.activity_resetpassword)
 
-        findViewById<View>(R.id.imgout).setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+        findViewById<View>(R.id.button5).setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        findViewById<View>(R.id.delight).setOnClickListener{
-            val intent = Intent(this, DelightActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 }

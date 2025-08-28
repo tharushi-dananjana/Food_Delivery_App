@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fooddelivery.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.example.fooddelivery.activity.LoginActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,12 +15,12 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        findViewById<View>(R.id.pizzaC).setOnClickListener{
+        findViewById<View>(R.id.kfcC).setOnClickListener{
             val intent = Intent(this, PizzaActivity::class.java)
             startActivity(intent)
         }
-        findViewById<View>(R.id.burgurC).setOnClickListener{
-            val intent = Intent(this, BurgurActivity::class.java)
+        findViewById<View>(R.id.pickupC).setOnClickListener{
+            val intent = Intent(this, PizzaActivity::class.java)
             startActivity(intent)
         }
 

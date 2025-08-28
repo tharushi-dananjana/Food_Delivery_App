@@ -3,13 +3,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-        <!-- 60% Primary -->
-        <color name="primaryColor">#FF5722</color> <!-- Orange -->
-        <!-- 30% Secondary -->
-        <color name="secondaryColor">#FFC107</color> <!-- Amber -->
-        <!-- 10% Accent -->
-        <color name="accentColor">#4CAF50</color> <!-- Green -->
-        <color name="lightGray">#F5F5F5</color>
+
+        <color name="primaryColor">#FFC107</color>
+
+        <color name="accentColor">#FF5722</color>
+
+        <color name="secondaryColor">#ffffff</color>
+
 
 
 </resources>

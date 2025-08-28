@@ -14,7 +14,7 @@ class SignUpActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_signup)
 
-        findViewById<View>(R.id.sign).setOnClickListener{
+        findViewById<View>(R.id.buttonSignup).setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }

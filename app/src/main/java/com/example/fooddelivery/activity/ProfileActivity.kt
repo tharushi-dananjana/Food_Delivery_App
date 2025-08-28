@@ -21,32 +21,22 @@ class ProfileActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
-
-        // default active menu highlight
-        bottomNav.selectedItemId = R.id.nav_profile
-
-        bottomNav.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.nav_home -> {
-                    startActivity(Intent(this, MainActivity::class.java))
-                    true
-                }
-                R.id.nav_profile -> {
-                    // Already in profile → do nothing
-                    true
-                }
-                R.id.nav_notification -> {
-                    startActivity(Intent(this, NotificationActivity::class.java))
-                    true
-                }
-                R.id.nav_settings -> {
-                    startActivity(Intent(this, SettingActivity::class.java))
-                    true
-                }
-                else -> false
-            }
+        findViewById<View>(R.id.hom).setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
+        findViewById<View>(R.id.sett).setOnClickListener {
+            val intent = Intent(this, SettingActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<View>(R.id.notifi).setOnClickListener {
+            val intent = Intent(this, NotificationActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<View>(R.id.prof).setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -1,13 +1,36 @@
 <resources>
+
+
+    <string name="notificationText">Notification</string>
+    <string name="firstText">Order Delivered\\nOrder delivered! Enjoy your meal and don’t forget to rate your experience.</string>
+    <string name="secondText">Order Confirmation\\nYour order has been placed successfully! Sit tight while we prepare your food.</string>
+    <string name="thirdText">Order Accepted\\nGood news! The restaurant has accepted your order and is getting it ready.</string>
+    <string name="fourthText">Food Being Prepared\\nYour meal is being freshly prepared. We’ll notify you once it’s on the way!</string>
+    <string name="fifth">Out for Delivery\\nYour order is on the way! Track your rider in real-time.</string>
+    <string name="sixText">Out for Delivery\\nYour order is on the way! Track your rider in real-time.</string>
+    <string name="sevenText">Out for Delivery\\nYour order is on the way! Track your rider in real-time.</string>
+    <string name="eightText">Out for Delivery\\nYour order is on the way! Track your rider in real-time.</string>
+    <string name="pizza">CAKE</string>
+    <string name="classic">Classic</string>
+    <string name="delight">Delight</string>
+    <string name="favourite">Favourite</string>
+    <string name="chicken">Chicken Triple Treat Pizza</string>
+    <string name="price">Large - 3000\\nMedium - 2000\\nSmall - 1000</string>
+    <string name="juice">Juice</string>
+    <string name="juiceText">Juice</string>
     <string name="app_name">Food Delivery</string>
-    <string name="textStyle">italic</string>
-    <string name="welcome">Welcome to QuickBite</string>
-    <string name="get_started">Get Started</string>
-    <string name="login">Login</string>
+    <string name="getstart">G e t  S t a r t</string>
     <string name="signup">Sign Up</string>
-    <string name="search_hint">Search for food or restaurants...</string>
-    <string name="order_now">Order Now</string>
-    <string name="add_to_cart">Add to Cart</string>
-
-
+    <string name="textdes">By Signing Below you agree the Terms of use and Privacy Notice</string>
+    <string name="forgotpassword">Forgot Password</string>
+    <string name="cake">Cake</string>
+    <string name="password">Reset Your Password</string>
+    <string name="email">Enter Your Email</string>
+    <string name="pass">New Password</string>
+    <string name="passwodd">New Password</string>
+    <string name="passs">Confirm Password</string>
+    <string name="submitt">Submit</string>
+    <string name="reset">Reset Your Password</string>
+    <string name="delightt">Delight</string>
+    <string name="setting">Setting</string>
 </resources>

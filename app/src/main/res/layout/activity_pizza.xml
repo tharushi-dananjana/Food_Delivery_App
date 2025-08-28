@@ -19,19 +19,17 @@
         app:srcCompat="@drawable/background_introoo" />
 
 
-    <!-- Card 1 -->
-
     <TextView
         android:id="@+id/textView18"
         android:layout_width="162dp"
         android:layout_height="40dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="120dp"
         android:paddingStart="40dp"
-        android:text="PIZZA"
-        android:textSize="28dp"
+        android:text="@string/pizza"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -50,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Classic"
+        android:text="@string/classic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -60,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Delight"
+        android:text="@string/delight"
         app:layout_constraintStart_toEndOf="@+id/classic"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -70,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Favourite"
+        android:text="@string/favourite"
         app:layout_constraintStart_toEndOf="@+id/delight"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -99,7 +97,7 @@
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
             android:layout_height="128dp"
-            app:srcCompat="@drawable/pop_3" />
+            app:srcCompat="@drawable/cake1" />
 
         <TextView
             android:id="@+id/textViewDesc1"
@@ -107,7 +105,7 @@
             android:layout_height="33dp"
             android:layout_marginTop="130dp"
             android:paddingStart="20dp"
-            android:text="Chicken Triple Treat Pizza"
+            android:text="@string/chicken"
             android:textStyle="bold" />
 
         <TextView
@@ -129,7 +127,7 @@
             android:text="Buy Now" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Card 2 -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="156dp"
@@ -143,7 +141,7 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="128dp"
-            app:srcCompat="@drawable/pop_3" />
+            app:srcCompat="@drawable/cake2" />
 
         <TextView
             android:id="@+id/textViewDesc2"
@@ -173,7 +171,7 @@
             android:text="Buy Now" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Card 3 -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="156dp"
@@ -187,7 +185,7 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="128dp"
-            app:srcCompat="@drawable/pop_3" />
+            app:srcCompat="@drawable/cake3" />
 
         <TextView
             android:id="@+id/textViewDesc3"
@@ -217,7 +215,6 @@
             android:text="Buy Now" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Card 4 -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView4"
         android:layout_width="156dp"
@@ -227,11 +224,11 @@
         app:layout_constraintStart_toEndOf="@+id/cardView3"
         app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
-        <ImageView
+    <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="128dp"
-            app:srcCompat="@drawable/pop_3" />
+            app:srcCompat="@drawable/cake4" />
 
         <TextView
             android:id="@+id/textViewDesc4"
@@ -260,5 +257,17 @@
             android:minHeight="48dp"
             android:text="Buy Now" />
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

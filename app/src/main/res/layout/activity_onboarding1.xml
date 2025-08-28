@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welpizza"
-        app:srcCompat="@drawable/logooo" />
+        app:srcCompat="@drawable/cakelogo" />
 
     <TextView
         android:id="@+id/textView13"
